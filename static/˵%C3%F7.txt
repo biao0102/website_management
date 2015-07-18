@@ -1,8 +1,0 @@
-列表页操作按钮背景：
-
-绿色：btn-success
-蓝色：btn-info
-红色：btn-danger
-暗黄：btn-primary
-鲜黄：btn-warning
-黑色：btn-inverse
