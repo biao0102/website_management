@@ -1,0 +1,112 @@
+/*------------------------------------------------------------------
+
+[Custom Stylesheet]
+
+
+Last change:	03/25/2013
+Assigned to:	You
+
+-------------------------------------------------------------------*/
+
+span.text-error {
+	display: block;
+	margin-top: 5px;
+}
+
+/* Chat
+=================================================================== */
+
+ul.chat {
+	margin:0;
+}
+
+ul.chat li {
+	list-style: none;
+	padding: 10px 0;
+	margin: 10px auto;
+	font-size: 14px;
+}
+
+
+ul.chat li img.avatar {
+	height: 50px;
+	width: 50px;
+	padding: 1px;
+}
+
+ul.chat li.left img.avatar {
+	float: left;
+	margin-right: 10px;
+}
+
+ul.chat li.right img.avatar {
+	float: right;
+	margin-left: 10px;
+}
+
+ul.chat li .message {
+	display: block;
+	border: 1px solid #ddd;
+	padding: 10px;
+	position: relative;
+	-webkit-border-radius: 4px;
+   	   -moz-border-radius: 4px;
+      		border-radius: 4px;
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,.05), inset 0 -1px 1px rgba(0,0,0,.05);
+	   -moz-box-shadow: 0px 1px 1px rgba(0,0,0,.05), inset 0 -1px 1px rgba(0,0,0,.05);
+		   	box-shadow: 0px 1px 1px rgba(0,0,0,.05), inset 0 -1px 1px rgba(0,0,0,.05);
+}
+
+ul.chat li.left .message {
+	text-align: left;
+	margin-left: 65px;
+	background: #fff;
+}
+
+ul.chat li.left .message .arrow {
+	height: 10px;
+	width: 10px;
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: -10px;
+	background: url(../img/chat-left.png) no-repeat 0px 0px;
+}
+
+ul.chat li.right .message .arrow {
+	height: 10px;
+	width: 10px;
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: -10px;
+	background: url(../img/chat-right.png) no-repeat 0px 0px;
+}
+
+ul.chat li.right .message {
+	text-align: right;
+	margin-right: 65px;
+	background: #f6f6f6;
+}
+
+ul.chat li .message .text {
+	display: block;
+}
+
+.chat-form {
+	border-top: 1px solid #ddd;
+	background: #eee;
+	padding: 10px;
+	margin: 20px -10px -10px -10px;
+}
+
+.chat-form textarea {
+	width: 100%;
+	padding: 0.5em;
+	-webkit-box-sizing: border-box; /* Safari, Chrome et al  */
+	   -moz-box-sizing: border-box; /* Firefox */
+	        box-sizing: border-box; /* Opera/IE 8+ */
+	height: 80px;
+	outline: 0px !important;
+	font-size: 12px;
+}
