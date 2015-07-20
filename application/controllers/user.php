@@ -10,6 +10,34 @@
 			parent::__construct();
 		}
 
+        //user login
+        /**
+         *
+         */
+        public function login()
+        {
+            $username=$this->input->get('username');
+            $password=md5($this->input->get('password'));
+            $userinfo=$this->userm->get_user_by_username($username);
+
+
+            foreach($userinfo as $row)
+            {
+                $un=$row['username'];
+                $up=$row['password'];
+
+                //账号密码正确
+                if($password==$up  && $username==$un)
+                {
+                    $this->smarty->display('home.tpl');
+                }
+                else
+                {
+                    $this->smarty->display('login.tpl');
+                }
+            }
+        }
+
 		public function lists()
 		{
 			$keyword = $this->input->get('keyword');
