@@ -55,6 +55,7 @@
 
 			// 文件生成路径
 			$dirpath = SITE_BASE_DIR . $version . '/' . $game_info['domain'] . '/' . $plat . '/list';
+
 			//debug($dirpath);
 			//$dirpath = '/var/www/html/site_offline/xzzh/';
 			// 创建目录，生成文件
