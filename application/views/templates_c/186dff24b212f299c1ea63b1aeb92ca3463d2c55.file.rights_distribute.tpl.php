@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-07-18 21:51:21
+<?php /* Smarty version Smarty-3.1.13, created on 2015-07-22 09:20:41
          compiled from "application/views/templates/rights_distribute.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:184154439555aa59d953bb61-40108649%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '186dff24b212f299c1ea63b1aeb92ca3463d2c55' => 
     array (
       0 => 'application/views/templates/rights_distribute.tpl',
-      1 => 1430129832,
+      1 => 1437406954,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_55aa59d9c676a0_50246896',
   'variables' => 
   array (
     'baseurl' => 0,
@@ -28,10 +30,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'usergames' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_55aa59d9c676a0_50246896',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55aa59d9c676a0_50246896')) {function content_55aa59d9c676a0_50246896($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_truncate')) include '/var/www/html/gw/application/libraries/Smarty/plugins/modifier.truncate.php';
+<?php if ($_valid && !is_callable('content_55aa59d9c676a0_50246896')) {function content_55aa59d9c676a0_50246896($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_truncate')) include '/Users/zhangbiao/projects/websit_management/website_management/application/libraries/Smarty/plugins/modifier.truncate.php';
 ?> <?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
  <?php echo $_smarty_tpl->getSubTemplate ("menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>

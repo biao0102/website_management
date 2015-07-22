@@ -15,6 +15,10 @@
 					  		&nbsp;&nbsp;
 							<input name="submit" type="submit" value="搜索" class="btn btn-primary">
 						</form>
+                        <form class="form-horizontal" action="<{$baseurl}>user/add" method="post">
+                            <input name="useraddreq" type="hidden" value="1" />
+                            <input name="submit" type="submit" value="添加用户" class="btn btn-primary">
+                        </form>
 					</div>
 				</div>
 			</div>
@@ -45,7 +49,10 @@
 									<td class="center"><{$i.username}></td>
 									<td class="center"><{$i.truename}></td>
 									<td class="center"><{$i.email}></td>
-									<td class="center"><{if $i.level==1}><b style="color:red;">超级管理员</b><{elseif $i.level==2}>普通管理员<{/if}></td>
+									<td class="center">
+                                        <{if $i.level==1}><b style="color:red;">超级管理员</b>
+                                        <{elseif $i.level==2}>普通管理员<{/if}>
+                                    </td>
 									<td class="center"><{$i.updatetime}></td>
 									<td class="center">
 										<a class="btn btn-info" href="<{$baseurl}>user/edit?userid=<{$i.userid}>" data-rel="tooltip" data-original-title="编辑">

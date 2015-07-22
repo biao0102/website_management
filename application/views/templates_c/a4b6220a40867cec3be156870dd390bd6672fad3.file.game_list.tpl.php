@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-07-18 17:36:13
+<?php /* Smarty version Smarty-3.1.13, created on 2015-07-21 14:01:11
          compiled from "application/views/templates/game_list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:213325820155aa1e0d82dc76-08805644%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a4b6220a40867cec3be156870dd390bd6672fad3' => 
     array (
       0 => 'application/views/templates/game_list.tpl',
-      1 => 1433843379,
+      1 => 1437406954,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_55aa1e0e03bf21_70766419',
   'variables' => 
   array (
     'baseurl' => 0,
@@ -22,8 +24,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'i' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_55aa1e0e03bf21_70766419',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_55aa1e0e03bf21_70766419')) {function content_55aa1e0e03bf21_70766419($_smarty_tpl) {?> <?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 

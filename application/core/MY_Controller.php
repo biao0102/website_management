@@ -20,33 +20,20 @@
 				mkdir($online_dir);
 				@chmod($online_dir, 0777);
 			}
-			
 
 			header("Content-type: text/html; charset=utf-8");
 			$this->db01 = $this->load->database('database01',true);	
 			$this->db02 = $this->load->database('database02',true);
-			$user = array('userid'=> '9','username'=> 'zhangbiao');
-			$this->session->set_userdata('user',$user);
-			$user = $this->session->userdata('user');
 
-			$this->userinfo = $this->userm->get_user_by_username($user['username']);
 
-			defined('USERID') || define('USERID',$this->userinfo['userid']);
-			defined('USERNAME') || define('USERNAME',$this->userinfo['username']);
-			defined('USERLV') || define('USERLV',$this->userinfo['level']);
-			if($user['userid'] == 9 && $user['username'] == 'zhangbiao'){
-				$this->login();
-			}			
+            //全局变量 初始化菜单列表  baseurl
+            $menulist = $this->menum->get_menulist();
+            $this->smarty->assign('baseurl',BASE_URL);
+            $this->smarty->assign('menu',$menulist);
+            $this->smarty->assign('userinfo',$this->session->userdata('user'));
+
 		}
 
-		private function login()
-		{
-
-			$menulist = $this->menum->get_menulist();
-			$this->smarty->assign('baseurl',BASE_URL);
-			$this->smarty->assign('userinfo',$this->userinfo);
-			$this->smarty->assign('menu',$menulist);
-		}
 
 	}
 

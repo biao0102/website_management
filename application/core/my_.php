@@ -42,7 +42,7 @@
 					{
 						$userdata['username'] = $uinfo['login_name'];
 						$userdata['truename'] = $uinfo['name'];
-						$userdata['password'] = '01cbee5496bccae6e80614e5eb8875a1';
+						$userdata['password'] = MD5('123456');
 						$userdata['email'] = $uinfo['email'];
 						$userdata['createtime'] = date('Y-m-d H:i:s',time());
 						$userdata['updatetime'] = date('Y-m-d H:i:s',time());
@@ -52,7 +52,6 @@
 					} else {
 						$userdata['updatetime'] = date('Y-m-d H:i:s',time());
 						$this->userm->update_logintime_by_username($uinfo['login_name'],$userdata);
-
 						$userid = $ret['userid'];
 						$username = $ret['username'];
 					}

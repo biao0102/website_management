@@ -36,10 +36,12 @@ define('FOPEN_READ_WRITE_CREATE',				'a+b');
 define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
-defined('BASE_URL') || define('BASE_URL','http://117.78.17.42:89/');
+//define('BASE_URL') || define('BASE_URL','http://117.78.17.42:89/');
+defined('BASE_URL') || define('BASE_URL','http://localhost/');
 
 
-define('SITE_BASE_DIR', '/var/www/html/');
+//define('SITE_BASE_DIR', '/var/www/html/');
+define('SITE_BASE_DIR', '/Users/zhangbiao/projects/websit_management/website_management/');
 define('SITE_STATIC_DIR', SITE_BASE_DIR . 'site/');
 define('SITE_RESOURCE_DIR', SITE_BASE_DIR . 'staticresource/');
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-07-18 17:35:20
+<?php /* Smarty version Smarty-3.1.13, created on 2015-07-22 06:39:24
          compiled from "application/views/templates/user_list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:98780963155aa1dd868fa77-14692454%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8e7b74e601922a392b45ecdafb5bc51b1868b90b' => 
     array (
       0 => 'application/views/templates/user_list.tpl',
-      1 => 1433223425,
+      1 => 1437547001,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_55aa1dd8e10e53_81741471',
   'variables' => 
   array (
     'baseurl' => 0,
@@ -23,8 +25,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'i' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_55aa1dd8e10e53_81741471',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_55aa1dd8e10e53_81741471')) {function content_55aa1dd8e10e53_81741471($_smarty_tpl) {?> <?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
@@ -47,6 +47,11 @@ user/lists" method="GET">
 					  		&nbsp;&nbsp;
 							<input name="submit" type="submit" value="搜索" class="btn btn-primary">
 						</form>
+                        <form class="form-horizontal" action="<?php echo $_smarty_tpl->tpl_vars['baseurl']->value;?>
+user/add" method="post">
+                            <input name="useraddreq" type="hidden" value="1" />
+                            <input name="submit" type="submit" value="添加用户" class="btn btn-primary">
+                        </form>
 					</div>
 				</div>
 			</div>
@@ -85,7 +90,10 @@ $_smarty_tpl->tpl_vars['i']->_loop = true;
 </td>
 									<td class="center"><?php echo $_smarty_tpl->tpl_vars['i']->value['email'];?>
 </td>
-									<td class="center"><?php if ($_smarty_tpl->tpl_vars['i']->value['level']==1){?><b style="color:red;">超级管理员</b><?php }elseif($_smarty_tpl->tpl_vars['i']->value['level']==2){?>普通管理员<?php }?></td>
+									<td class="center">
+                                        <?php if ($_smarty_tpl->tpl_vars['i']->value['level']==1){?><b style="color:red;">超级管理员</b>
+                                        <?php }elseif($_smarty_tpl->tpl_vars['i']->value['level']==2){?>普通管理员<?php }?>
+                                    </td>
 									<td class="center"><?php echo $_smarty_tpl->tpl_vars['i']->value['updatetime'];?>
 </td>
 									<td class="center">

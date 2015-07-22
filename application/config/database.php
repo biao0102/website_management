@@ -3,7 +3,7 @@
 $active_group = 'database01';
 $active_record = TRUE;
 
-$db['database01']['hostname'] = '127.0.0.1';
+$db['database01']['hostname'] = '117.78.17.42';
 $db['database01']['username'] = 'root';
 $db['database01']['password'] = '123456';
 $db['database01']['database'] = 'backend';
@@ -19,7 +19,7 @@ $db['database01']['swap_pre'] = '';
 $db['database01']['autoinit'] = TRUE;
 $db['database01']['stricton'] = FALSE;
 
-$db['database02']['hostname'] = '127.0.0.1';
+$db['database02']['hostname'] = '117.78.17.42';
 $db['database02']['username'] = 'root';
 $db['database02']['password'] = '123456';
 $db['database02']['database'] = 'cms';
